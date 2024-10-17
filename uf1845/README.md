@@ -1,11 +1,11 @@
 # Realizando consultas con MongoDB
 
-Implementa todas las consultas sobre la base de datos _sample_mfliex_ colección _movies_.
+Implementa todas las consultas sobre la base de datos _sample\_mflix_ de la colección _movies_.
 Para conseguir cada consulta tan solo es necesario substituir el comentario `/** FILL ME */` por el código adecuado.
 
 ## Conusulta 1
 
-Obtén las 3 primeras películas de acción ordenadas por el campo _year_ de forma decreciente.
+Obtén las 3 primeras películas de **acción** ordenadas por el campo _year_ de forma decreciente.
 
 ## Consulta 2
 
@@ -17,11 +17,11 @@ Encuentra 3 películas de los años 2000 o más recientes, mostrando título y a
 
 ## Consulta 4
 
-Encuentra 3 películas ordenadas por fecha de lanzamiento en ordenascendente. Las más antiguas de toda la base de datos
+Encuentra 3 películas ordenadas por fecha de lanzamiento de forma creciente (campo _year_). Las más antiguas de toda la base de datos deben aparecer primero.
 
 ## Consulta 5 (Difícil)
 
-Encuentra 3 películas con una calificación mayor a 8.5 y más de 10000 votos en IMDB, mostrando solo título, año y calificación. Ordénalas por calificación IMDB de forma decreciente
+Encuentra 3 películas con una calificación mayor a 8.5 y más de 10000 votos en IMDB, mostrando solo título, año y calificación. Ordénalas por calificación IMDB de forma decreciente.
 
 ## Estructura de un documento de esta colección
 

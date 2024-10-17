@@ -2,9 +2,9 @@
 
 ## Tareas pendientes (pending-tasks.js)
 
-Escribe una función que recibe un conjunto de tareas y devuelve únicamente aquellas marcadas como "completed"
+Escribe una función que recibe un conjunto de tareas y devuelve únicamente aquellas que estan pendientes.
 
 ### BONUS
 
-No utilizar el operador de comparador "==" para realizar el ejercicio
+No utilices el operador de comparador "==" o "===" para realizar el ejercicio.
 

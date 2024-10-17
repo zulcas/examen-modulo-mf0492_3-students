@@ -2,13 +2,13 @@
 
 Des de CatSalut nos han mandado implementar una app para gestionar la información sobre los pacientes de la seguridad social. Implementa los diferentes apartados.
 
-En la mayoría de las ocasiones tan solo es necesario modificar o añadir una línea de código para obtener la funcionalidad
+En la mayoría de las ocasiones tan solo es necesario modificar o añadir una o dos línea de código para obtener la funcionalidad. SOLAMENTE debes modificar el fichero o _endpoint_ especificado para conseguir el requisito.
 
 [Demo](https://oscarm.tinytake.com/df/16ca641/thumbnail?type=attachments&version_no=0&file_version_no=0&thumbnail_size=preview)
 
 ## Apartado A : Obtener la lista de pacientes en formato JSON
 
-Modifica el _endpoint_ `GET /api/patients` para obtener la lista de pacientes de la base de datos en formaot JSON
+Modifica el _endpoint_ `GET /api/patients` para obtener la lista de pacientes de la base de datos en formato JSON.
 
 ## Apartado B
 
@@ -16,7 +16,7 @@ Modifica el _endpoint_ `GET /api/patients` para obtener la lista de pacientes de
 
 ## Apartado C
 
-Actualmente no está funcionando correctamente el comprobar si un paciente existe o no en la base de datos. Modifica el endpoint `GET /check` para conseguirlo. 
+Actualmente no está funcionando correctamente el comprobar si un paciente existe o no en la base de datos. Siempre devuelve lo mismo, pongamos lo que pongamos en el [formulario](http://localhost:3000/form).  Modifica el endpoint `GET /check` para conseguirlo. 
 
 <details>
   <summary>Pista</summary>
@@ -27,6 +27,11 @@ Actualmente no está funcionando correctamente el comprobar si un paciente exist
 ## Apartado D
 
 Queremos llevar un registro de las peticiones que se hacen a la base de datos de la seguridad social. Cada vez que se haga una petición, escribe una entrada en el fichero de formato 'YEAR-MONTH-DAY.txt'
+
+<details>
+  <summary>Pista</summary>
+  <p>Mira la carpeta utils 😉</p>
+</details>
 
 ### BONUS - No puntuable
 
