@@ -6,5 +6,5 @@ Escribe una función que recibe un conjunto de tareas y devuelve únicamente aqu
 
 ### BONUS
 
-No utilices el operador de comparador "==" o "===" para realizar el ejercicio.
+No utilices el operador de comparación "==" o "===" para realizar el ejercicio.
 
