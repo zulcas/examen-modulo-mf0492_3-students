@@ -20,8 +20,8 @@ Actualmente no está funcionando correctamente el comprobar si un paciente exist
 
 <details>
   <summary>Pista</summary>
-  <p>1. Necesitas obtener el número de la seguridad social de la query string</p>
-  <p>2. Hay que modificar la consulta a la base de datos para realizar la búsqueda del documento usando la información anterior</p>
+  <p>1. Necesitas obtener el número de la seguridad social de la query string.</p>
+  <p>2. Hay que modificar la consulta Patient.findOne() a la base de datos para realizar la búsqueda del documento usando la información anterior</p>
 </details>
 
 ## Apartado D
