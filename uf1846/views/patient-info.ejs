@@ -12,20 +12,22 @@
     <h1>Información del Paciente</h1>
 
     <% if (patient) { %>
-        <p>Número de la Seguridad Social: <%= patient.ssn %>
-        </p>
-        <p>Nombre: <%= patient.firstName %>
-                <%= patient.lastName %>
-        </p>
-        <p>Fecha de nacimiento: <%= patient.birthDate.toLocaleDateString() %>
-        </p>
-        <% } else { %>
-            <p>
-                <%= message %>
+        <article>
+            <p>Número de la Seguridad Social: <%= patient.ssn %>
             </p>
-            <% } %>
+            <p>Nombre: <%= patient.firstName %>
+                    <%= patient.lastName %>
+            </p>
+            <p>Fecha de nacimiento: <%= patient.birthDate.toLocaleDateString() %>
+            </p>
+            <% } else { %>
+                <p>
+                    <%= message %>
+                </p>
+                <% } %>
+        </article>
 
-                <a href="/form">Buscar otro paciente</a>
+        <a href="/form">Buscar otro paciente</a>
 </body>
 
 </html>
