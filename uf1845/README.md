@@ -3,6 +3,8 @@
 Implementa todas las consultas sobre la base de datos _sample\_mflix_ de la colección _movies_.
 Para conseguir cada consulta tan solo es necesario substituir el comentario `/** FILL ME */` por el código adecuado.
 
+Todas las consultas estan **ya ordenadas** ordenadas por año de forma decreciente excepto la última.
+
 ## Conusulta 1
 
 Obtén las 3 primeras películas de **acción** ordenadas por el campo _year_ de forma decreciente.
@@ -166,17 +168,17 @@ Consulta 2 - Películas de Christopher Nolan: [
   },
   { title: 'Inception', directors: [ 'Christopher Nolan' ] }
 ]
-Consulta 3 - Películas recientes: [
+Consulta 3 - Películas recientes a partir del año 2000: [
   { title: 'The Masked Saint', year: 2016 },
   { year: 2015, title: 'Ex Machina' },
   { title: 'The Stanford Prison Experiment', year: 2015 }
 ]
-Consulta 4 - Películas más recientes primero: [
+Consulta 4 - Películas ordenadas por año de forma creciente: [
   { title: 'The Kiss', year: 1896 },
   { title: 'The Kiss', year: 1896 },
   { title: 'The Great Train Robbery', year: 1903 }
 ]
-Consulta 5 - Películas con calificación > 8.5 y más de 10000 votos: [
+Consulta 5 - Películas con calificación > 8.5 y más de 10000 votos. Ordenadas por calificación de forma decreciente: [
   { title: 'Band of Brothers', year: 2001, imdb: { rating: 9.6 } },        
   { title: 'Planet Earth', year: 2006, imdb: { rating: 9.5 } },
   {

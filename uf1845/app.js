@@ -19,10 +19,10 @@ async function main() {
             .limit(3)  // Limitamos a 3 para el ejemplo
             .toArray();
         console.log('Consulta 0 - Películas en Ucraniano:', ukrainianMovies);
-        
-        // Consulta 1: Encuentra 3 películas del género "Action", mostrando solo título y género
+
+        // Consulta 1: Encuentra 3 películas del género "Action", mostrando solo título y género. 
         const actionMovies = await collection.find(
-            {/** FILL ME */},
+            {/** FILL ME */ },
             { projection: { title: 1, genres: 1, _id: 0 } }
         )
             .sort({ year: -1 })
@@ -48,27 +48,27 @@ async function main() {
             .sort({ year: -1 })  // Ordena por año de manera descendente (más recientes primero)
             .limit(3)
             .toArray();
-        console.log('Consulta 3 - Películas recientes:', recentMovies);
+        console.log('Consulta 3 - Películas a partir del año 2000:', recentMovies);
 
         // Consulta 4: Encuentra 3 películas ordenadas por fecha de lanzamiento en ordenascendente. Las más antiguas de toda la base de datos
         const orderedMovies = await collection.find(
             {},
             { projection: { title: 1, year: 1, _id: 0 } }
         )
-            .sort(/** FILL ME */)
+            .sort({/** FILL ME */ })
             .limit(3)
             .toArray();
-        console.log('Consulta 4 - Películas más recientes primero:', orderedMovies);
+        console.log('Consulta 4 - Películas ordenadas por año de forma creciente:', orderedMovies);
 
-        // Consulta 5 (Difícil): Encuentra 3 películas con una calificación mayor a 8.5 y más de 10000 votos en IMDb, mostrando solo título, año y calificación
+        // Consulta 5 (Difícil): Encuentra 3 películas con una calificación mayor a 8.5 y más de 10000 votos en IMDb, mostrando solo título, año y calificación. Ordénalas de forma descendiente por calificación
         const topRatedMovies = await collection.find(
             { /** FILL ME */ },
             { projection: { title: 1, year: 1, 'imdb.rating': 1, _id: 0 } }
         )
-            .sort(/** FILL ME */)  // Ordena por calificación en orden descendente
+            .sort({/** FILL ME */ })  // Ordena por calificación en orden descendente
             .limit(3)
             .toArray();
-        console.log('Consulta 5 - Películas con calificación > 8.5 y más de 10000 votos:', topRatedMovies);
+        console.log('Consulta 5 - Películas con calificación > 8.5 y más de 10000 votos ordenadas por calificación de forma decreciente:', topRatedMovies);
 
     } catch (error) {
         console.error(error);
