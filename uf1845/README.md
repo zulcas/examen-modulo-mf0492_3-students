@@ -3,6 +3,10 @@
 Implementa todas las consultas sobre la base de datos _sample\_mflix_ de la colección _movies_.
 Para conseguir cada consulta tan solo es necesario substituir el comentario `/** FILL ME */` por el código adecuado.
 
+## Cómo ejecutar el programa
+
+`node app.js`
+
 Todas las consultas estan **ya ordenadas** ordenadas por año de forma decreciente excepto la última.
 
 ## Conusulta 1
