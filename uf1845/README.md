@@ -3,19 +3,19 @@
 Implementa todas las consultas sobre la base de datos _sample\_mflix_ de la colección _movies_.
 Para conseguir cada consulta tan solo es necesario substituir el comentario `/** FILL ME */` por el código adecuado.
 
+Casi todas las consultas estan **ya ordenadas**  por año de forma decreciente.
+
 ## Cómo ejecutar el programa
 
 `node app.js`
 
-Todas las consultas estan **ya ordenadas** ordenadas por año de forma decreciente excepto la última.
+## Consulta 1
 
-## Conusulta 1
-
-Obtén las 3 primeras películas de **acción** ordenadas por el campo _year_ de forma decreciente.
+Obtén las 3 primeras películas del género (_campo genres_) **action** ordenadas por el campo _year_ de forma decreciente.
 
 ## Consulta 2
 
-Encuentra 3 películas dirigidas por "Christopher Nolan", mostrando solo título y director ordenadas por el campo _year_ de forma decreciente.
+Encuentra 3 películas dirigidas por "Christopher Nolan" (_campo directors_), mostrando solo título y director ordenadas por el campo _year_ de forma decreciente.
 
 ## Consulta 3
 
