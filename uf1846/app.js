@@ -1,6 +1,7 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const Patient = require('./models/patient');
+const { logRequest } = require('./utils/utils');
 
 const app = express();
 
@@ -26,7 +27,7 @@ app.get('/', async (req, res) => {
 // Endpoint 1: Obtener todos los pacientes en formato JSON en la ruta /api/patients
 app.get('/api/patients', async (req, res) => {
     try {
-        const patients = [];
+        const patients = await Patient.find();
         res.json({
             message: "Query executed successfully",
             results: patients
@@ -42,16 +43,19 @@ app.get('/form', (req, res) => {
 });
 
 // Endpoint 3: Verificar si el paciente existe y mostrar información
-app.get('/check', async (req, res) => {
-    
+app.get('/check', async (req, res) => {   
     try {
-        const patient = await Patient.findOne();
+        const ssn = req.query.ssn;
+        console.log(ssn);
+        const patient = await Patient.findOne({ssn:ssn});
         console.log("🚀 ~ file: app.js:52 ~ app.get ~ patient:", patient)
 
         if (patient) {
             res.render('patient-info', { patient });
+            logRequest(`Se ha buscado un usuario existente: ${ssn}`)
         } else {
             res.render('patient-info', { patient: null, message: 'El paciente no existe en la base de datos' });
+            logRequest(`Se ha buscado un usuario no existente: ${ssn}`)
         }
     } catch (err) {
         res.status(500).send('Error al verificar el paciente');

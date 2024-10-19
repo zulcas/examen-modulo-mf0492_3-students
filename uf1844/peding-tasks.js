@@ -1,5 +1,6 @@
 
 function filterPendingTaks(tasks) {
+  return tasks.filter(task => task.completed)
 
 }
 
